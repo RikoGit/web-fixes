@@ -1,12 +1,14 @@
 env:
-  browser: true
-  es2020: true
+    browser: true
+    es2020: true
+globals:
+    chrome: readonly
 extends:
-  - airbnb-base
-  - plugin:prettier/recommended
+    - airbnb-base
+    - plugin:prettier/recommended
 parserOptions:
-  ecmaVersion: 2020
-  sourceType: module
+    ecmaVersion: 2020
+    sourceType: module
 rules:
-  import/extensions: [error, ignorePackages]
-  import/no-extraneous-dependencies: [error, { packageDir: "." }]
+    import/extensions: [error, ignorePackages]
+    import/no-extraneous-dependencies: [error, { packageDir: '.' }]
