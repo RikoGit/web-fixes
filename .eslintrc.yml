@@ -8,7 +8,8 @@ extends:
     - plugin:prettier/recommended
 parserOptions:
     ecmaVersion: 2020
-    sourceType: module
+    sourceType: script
 rules:
     import/extensions: [error, ignorePackages]
     import/no-extraneous-dependencies: [error, { packageDir: '.' }]
+    strict: [error, global]
